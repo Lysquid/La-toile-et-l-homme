@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<!-- Title -->
+	<title>III. Comment l'Homme peut-il s'inspirer de la toile? | La toile et l'Homme</title>
+	<!-- Meta-data -->
+	<meta charset="utf-8">
+	<meta http-equiv="content-Type" content="text/html" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="Production finale de TPE : Comment l’Homme peut-il s’inspirer des propriétés de la toile d’araignée? Il s'agit d'étudier la soie et la toile de cet arachnide à toutes les échelles pour en tirer leurs intérêts biomimétiques. Cette page traite des applications de la soie et de la toile d'araignée et ses moyens de production." />
+	<meta name="keywords" content="toile, toiles, araignée, argaingnées, soie, biomimétisme, toile d'araignée, toiles d'araignées, toile et l'homme, homme, biomatériau, protéine de soie, TPE, travaux pratiques encadrés, fil, fil de soie, soie d'araignée, soie, applications soie d'araignée, biomimétisme araignée, arachnide, TPE 2019, physique svt, svt physique, matière et forme, TPE, TPE araignée, TPE soie, TPE soie d'araignée, arenae, futur, matériau futur, matériau solide, matériau élastique, matériau solide et élastique, AMSilk, Spiber, transgénèse, géométrie toile, reproduire soie d'araignée, canibalisme araignées, filer soie, gilet pare-balle futur, gilet pare-balle soie d'araignée, robe soie d'araignée, violon soie d'araignée, insectarium Besançon, insectarium, gène protiéine soie, chèvre soie d'araignée, tabac soie d'araignée, médecine soie d'araignée, pansement soie d'araignée, greffe soie d'araignée" />
+	<meta name="author" content="Romain Benoit, Natan Doubez, Théo Pascoal" />
+	<!-- CSS -->
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|Titillium+Web" rel="stylesheet">
+	<link rel="stylesheet" href="css/fontawesome.css">
+	<!-- My CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Scipts -->
+	<script>
+		function affichage(id, rep, bonne) {
+			var id = id.toString();
+			document.getElementById('A'+id).style.backgroundColor = 'var(--second-color)';
+			document.getElementById('B'+id).style.backgroundColor = 'var(--second-color)';
+			document.getElementById('C'+id).style.backgroundColor = 'var(--second-color)';
+			document.getElementById('A'+id).style.pointerEvents = 'none';
+			document.getElementById('B'+id).style.pointerEvents = 'none';
+			document.getElementById('C'+id).style.pointerEvents = 'none';
+			document.getElementById(rep+id).style.backgroundColor = 'var(--warning-color)';
+			document.getElementById(bonne+id).style.backgroundColor = 'var(--main-color)';
+		}
+		function msg(id, txt) {
+			document.getElementById('msg'+id).innerHTML = txt
+		}
+
+		function q(id, rep) {
+			if (id==1) {
+				affichage(id, rep, 'C')
+				if (rep=='A') {
+					msg(id, `Le fil d’araignée, solide et élastique sans pouvoir se tordre semble parfait pour remplacer les cordes d’escalades, mais c'est loin d'être sa seule utilité :`)
+				}
+				if (rep=='B') {
+					msg(id, `Le fil d’araignée est solide tout en vibrant excellemment, ce qui lui donne un rôle privilégié pour la plupart des instruments à corde, mais il a d’autres utilités :`)
+				}
+				if (rep=='C') {
+					msg(id, `Effectivement, à notre jour nous ne lui avons pas encore trouvé d’intérêt dans la danse, mais elle est utile dans de nombreux autres domaines :`)
+				}
+			}
+			if (id==2) {
+				affichage(id, rep, 'B')
+				if (rep=='A') {
+					msg(id, `La rougeole est une maladie qui n’atteint que les humains, ce n’est donc pas un problème pour les araignées, cependant beaucoup de facteurs complexifient l’élevage :`)
+				}
+				if (rep=='B') {
+					msg(id, `Bien joué, les araignées sont des êtres plutôt solitaires allant jusqu’à manger par leurs congénères, il n’y a que pour l’accouplement qu’elles sont aptes à cohabiter, mais ce n’est pas le seul problème pour leur exploitation :`)
+				}
+				if (rep=='C') {
+					msg(id, `Les araignées sont omniprésentes, et pour cause, elles pondent en moyenne 600 araignées par accouplement. Et puis, elles ne manquent pas dans nos maisons, c’est pour les élever que les problèmes commencent :`)
+				}
+			}
+			if (id==3) {
+				affichage(id, rep, 'B')
+				if (rep=='A') {
+					msg(id, `Non, la structure n’a que peu d’importance par rapport au matériau dans l’isolation thermique. Cette structure a en revanche des intérêts ailleurs :`)
+				}
+				if (rep=='B') {
+					msg(id, `Exactement, cela paraît étonnant mais il est beaucoup plus pratique de faire des toits en forme de toile d’araignée, et ce n’est pas le seul domaine où cette forme est réutilisée :`)
+				}
+				if (rep=='C') {
+					msg(id, `Au contraire, comme ce n’est pas de la soie qui est directement utilisée, la solidité ne change pas. Par contre les dégâts en cas de chute sont minimisés et on trouve d’autres qualités :`)
+				}
+			}
+		}
+	</script>
+
+</head>
+<body>
+
+	<div class="container-fluid">
+		<div class="partie" id="III">
+			<header class="row">
+				<div class="col-12 navbar navbar-dark">
+					<a class="titre navbar-brand" href="index.html"><i class="fas fa-spider"></i>La toile et l'Homme</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<nav class="collapse navbar-collapse" id="navbarNav">
+						<div class="barre"></div>
+						<ol class="main-ol">
+							<li><a href="index.html">Introduction</a></li>
+							<li><a href="I.html">I. Comment l'araignée tisse-t-elle sa toile?</a></li>
+							<li><a href="II.html">II. Quelles sont les propriétés physiques de la toile?</a></li>
+							<li><a class="active"  href="III.html">III. Comment l'Homme peut-il s'inspirer de la toile?</a></li>
+							<ol class="sub-ol">
+								<li><a href="#1">1. Les applications de la soie d'araignée</a></li>
+								<li><a href="#2">2. Reproduire la soie d’araignée</a></li>
+								<li><a href="#3">3. La réutilisation de la forme de la toile</a></li>
+							</ol>
+							<li><a href="conclusion.html">Conclusion</a></li>
+							<li><a href="annexe.html">Annexe</a></li>
+						</ol>
+					</nav>
+				</div>
+
+			</header>
+			<div class="sous-titre row flex-container">
+				<h1 class="long">III. Comment l'Homme peut-il s'inspirer de la toile?</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="page row">
+			<div class="cote cote-gauche col-lg-2-5">
+				<nav class="menu">
+					<ol class="main-ol">
+						<li><a href="index.html">Introduction</a></li>
+						<li><a href="I.html">I. Comment l'araignée tisse-t-elle sa toile?</a></li>
+						<li><a href="II.html">II. Quelles sont les propriétés physiques de la toile?</a></li>
+						<li><a class="active"  href="III.html">III. Comment l'Homme peut-il s'inspirer de la toile?</a></li>
+						<ol class="sub-ol">
+							<li><a href="#1">1. Les applications de la soie d'araignée</a></li>
+							<li><a href="#2">2. Reproduire la soie d’araignée</a></li>
+							<li><a href="#3">3. La réutilisation de la forme de la toile</a></li>
+						</ol>
+						<li><a href="conclusion.html">Conclusion</a></li>
+						<li><a href="annexe.html">Annexe</a></li>
+					</ol>
+				</nav>
+			</div> <!--Left pannel-->
+			<div class="article col-lg-7 container-fluid">
+				<div class="row">
+					<p class="intro">
+						Les propriétés fascinantes de la soie et de la toile ont éveillé les intérêts de beaucoups, qui se sont empressés d'essayer de l'imiter. Que ce soit à des fins commerciales, expérimentales ou artisanales, il est temps de voir ce que l'Homme a retenu de la leçon de la nature.
+					</p>
+					<h2 id="1"><span class="nb">1</span>Les applications de la soie d'araignée</h2>
+					<div class="col-12"><span class="titre-question">QUESTION</span></div>
+					<div class="question">
+						<h3>Où est-ce que la soie d’araignée n’a pas d’application?</h3>
+						<ul>
+							<li>
+								<button id="A1" class="btn btn-dark" type="button" onclick="q(1, 'A')">A</button>
+								Dans l’escalade
+							</li>
+							<li>
+								<button id="B1" class="btn btn-dark" type="button" onclick="q(1, 'B')">B</button>
+								Dans la musique
+							</li>
+							<li>
+								<button id="C1" class="btn btn-dark" type="button" onclick="q(1, 'C')">C</button>
+								Dans la danse
+							</li>
+						</ul>
+						<em id="msg1" class="rep"></em>
+					</div>
+					<p>
+						Il n'a pas été nécessaire d'attendre les preuves de la supériorité de la soie d'araignée pour la voir utilisée par les hommes. Ainsi, certains peuples utilisent de la soie d'araignée qu'ils récoltent de manière artisanale pour des outils nécessaires à la vie de tous les jours. Par exemple, les Papous de Nouvelle-Guinée confectionnent des filets de pêche, ceux-ci sont certainement longs à réaliser avec peu de moyens, mais ils illustrent bien l’intérêt multiple du fil d’araignée. Les Grecs anciens utilisaient aussi ce fil pour refermer des plaies.
+						<p>
+							Toutefois, la compréhension des propriétés surprenantes de la soie d'araignée a permis d'envisager sa réutilisation à une nouvelle échelle, celle de la société moderne, et ce dans plusieurs domaines.
+							Le premier auquel on peut penser est la médecine. Des chercheurs britanniques ont en effet eu cette réflexion ce qui a mené au développement d'un pansement à base de soie d'araignée. Le but est en fait de transporter des antibiotiques par cette voie originale. Ces derniers seraient dissous dans la protéine de soie avant qu'elle ne forme des fibres, le médicament serait alors intégré au pansement. Un premier essai concluant a été mené, et a permis de libérer l'antibiotique pendant cinq jours chez le patient. Déposée sur une plaie, une telle toile thérapeutique peut alors aider à la cicatrisation et à la régénération des cellules sans craindre de réaction immunitaire ou inflammatoire. En plus de cela, il est respectueux de l'environnement puisque cette soie est parfaitement biodégradable.
+						</p>
+						<p>
+							A l'intérieur de l'organisme cette fois, la médecine songe à utiliser la soie d'arachnide pour restaurer certains organes et articulations endommagés. Leurs tissus ont en effet besoin d'une structure donnant un modèle, sans laquelle ils se développent anarchiquement. C'est là que notre soie intervient, aucun matériau naturel ne correspondant vraiment à cet usage. Il reste encore à trouver l'espèce d'araignée capable de fournir la soie la plus adaptée.
+							Un dernier projet serait d'utiliser du fil d'araignée pour remplacer des tendons ou des ligaments grâce à sa grande résistance. C'est de plus une matière organique qui présente très peu de rejets ou de réactions allergiques notamment grâce à son acidité adéquate. La soie d'araignée peut ainsi être qualifiée de biomatériau, c'est-à-dire qu'elle n'interfère pas avec le corps, ce qui rend son utilisation extrêmement pratique.
+						</p>
+						<p>
+							Un autre domaine dans lequel l'utilisation de la soie d'araignée est sérieusement envisagée est le domaine militaire. La grande résistance qu'elle possède alliée à une élasticité hors du commun est idéale pour arrêter des balles; cela a donné l'idée de faire des gilets pare-balle à base de ce matériau, qui se serait d'autant plus confortables de par la légereté de la soie. Et pour preuve, la défense américaine a d'ailleurs signée un contrat de près de 2 millions de dollars avec la société Kraig Biocraft Laboratories Inc pour que ses recherches aboutissent à la production de gilets pare-balles ou même de sous-vêtements en soie d'arachnide.
+						</p>
+						<p>
+							Toujours le domaine du textile, mais d'un point de vue plus artistique, une robe de soie aura été créée a l'aide d'araignées de l'espèce des Néphiles dorées qui produisent une soie d'une superbe couleur dorée.
+						</p>
+						<figure class="center" style="width:740px">
+							<img src="img/III/robe.jpg" alt="Photo de la robe faite à partir de soie d'araignée">
+							<figcaption class="dark">
+								Robe en soie d'araignée
+								<span>
+									madmoiZelle.com
+									<a class="dark" href="http://static.mmzstatic.com/wp-content/uploads/2012/01/capearaignees1.jpg" title="source de l'image" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+								</span>
+							</figcaption>
+						</figure>
+						<p>
+							Elle d'ailleurs absolument magnifique, le tissu est un brocart dont les motifs géométriques et complexes auront su ravir tout en réunissant solidité et légèreté. Pour ce faire il aura tout de même fallu utiliser près d'un million d'araignées et s'armer de patience durant les quatre ans qu'ont passés ses créateurs, Simon Peers et Nicholas Godley, à la conception de cette étoffe. Ces quatre mètres de longueur en font le plus grand vêtement du monde à avoir été réalisé entièrement en soie d'araignée. Car ce n'est pas la première tentative, si une première pièce avait été confectionnée en 1900, on peut remonter jusqu'au siècle des Lumières. Diderot même fait la mention dans sa célèbre encyclopédie de bas et de mitaines artisanaux en ce biomatériau. Bien que les enjeux dans tous ces vêtements soient plus esthétiques que pratiques, ils laissent rêveurs face aux possibilités que laisse la soie d'araignée.
+						</p>
+						<p>
+							Bien moins évident cette fois, la soie d'araignée pourrait permettre la détection efficace des gaz. Il a été remarqué que la soie d'araignée absorbe la lumière d'une manière qui dépend des gaz de son environnement. Un procédé permet de tirer profit de ces observation : un faisceau laser est envoyé à travers des fibres de soie, les modifications provoquées sont alors mesurées à l'aide d'un appareil que l'on appelle un "analyseur de polarisation". Si ces modifications changent, c’est que les gaz présents dans la pièce ont également été modifiés. Il serait même possible de la faire réagir à des gaz spécifiques. Ce qui est utile c'est que la soie d'araignée se modifie en présence du gaz mais en plus elle peut revenir à son état d'origine alors que les capteurs actuels sont souvent à usage unique, son coût original est donc plus élevé mais elle serait plus intéressante à la longue. La soie d'araignée s'avère donc être un moyen de faire évoluer ces technologies pour les rendre plus utilisables.
+						</p>
+						<div>
+							<figure class="right" style="width:340px">
+								<img src="img/III/violon.jpg" alt="Photo d'un violon aux cordes en soie d'araignée">
+								<figcaption class="dark">
+									Un violon aux cordes en soie d'araignée
+									<span>
+										interest.pics
+										<a class="dark" href="https://pinimg.icu/ipi/0x0/08c30/le-chercheur-japonais-shigeyoshi-osaki-exp-rimente-ses-cordes-de-E94b5bcfa7285c316e4060a7953b28964.jpg" title="source de l'image" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+									</span>
+								</figcaption>
+							</figure>
+							<p>
+								Enfin, on trouve diverses utilisations modestes qui témoignent de l'engouement autour du matériau. Les cordes de violons réalisées par Shigeyoshi Osaki en sont un bon exemple. Ce professeur d’université a même qualifié le son de son instrument final de “doux et profond”. L'avenir regorge de projets pour la soie d'araignée, et certains imaginent aussi l'utiliser pour faire des câbles de suspension ou des cordes d'escalade, pour lesquels la propriété de non-torsion est très utile, ou encore des combinaisons spatiales, des fibres optiques et même des châssis de voiture.
+							</p>
+						</div>
+						<h2 id="2"><span class="nb">2</span>Reproduire la soie d’araignée</h2>
+						<div class="col-12"><span class="titre-question">QUESTION</span></div>
+						<div class="question">
+							<h3>Quel facteur rend l’exploitation d’araignée difficile pour utiliser leur soie ?</h3>
+							<ul>
+								<li>
+									<button id="A2" class="btn btn-dark" type="button" onclick="q(2, 'A')">A</button>
+									La rougeole
+								</li>
+								<li>
+									<button id="B2" class="btn btn-dark" type="button" onclick="q(2, 'B')">B</button>
+									Le cannibalisme
+								</li>
+								<li>
+									<button id="C2" class="btn btn-dark" type="button" onclick="q(2, 'C')">C</button>
+									La difficulté à trouver des araignées
+								</li>
+							</ul>
+							<em id="msg2" class="rep"></em>
+						</div>
+						<p>
+							La soie d'araignée ne manque donc pas d'utilité, et si certains projets ne demandent que des quantités artisanales de soie, d'autres nécessitent une véritable production à échelle presque industrielle. L'Homme exploite bien de nombreux animaux pour leurs ressources, qu'en est-il de l'araignée et de sa soie? Pour répondre a cette question, nous sommes allés à la rencontre d'Anne-Lise Gérard, médiatrice scientifique à l'Insectarium de Besançon. Au cours de la visite du laboratoire d'élevage plus détaillée dans <a href="annexe.html#2">cette partie de l'annexe</a>, nous avons pu découvrir par le travail des éleveurs les difficultés que représentent l'élevage d'araignées.
+						</p>
+						<div>
+							<figure class="right" style="width:240px">
+								<img src="img/III/bocal.jpg" alt="Elevage d'araignées récemment sorties de leurs cocons">
+								<figcaption class="dark">
+									Elevage d'araignées récemment sorties de leurs cocons
+								</figcaption>
+							</figure>
+							<p>
+								Le premier problème qu'il faut surmonter est le cannibalisme qui existe entre elles. C'est ce que nous a appris un éleveur de l'Insectarium en nous montrant la boîte ci-contre. Les jeunes araignées qui y naissent n'hésitent pas à manger leurs congénères. Il est même courant chez certaines espèces que la femelle dévore le mâle après l'accouplement. On peut cependant pallier ce problème en donnant aux araignées suffisamment de nourriture et un espace assez grand pour faire leur toile. C'est pour cette raison que les araignées, une fois plus grandes, sont laissées en liberté dans le laboratoire. Elles y choisissent un espace inoccupé et y tissent leur toile, d'où elles ne bougent plus par la suite.
+							</p>
+						</div>
+						<figure class="center" style="width:800px">
+							<img src="img/III/plafond.jpg" alt="Araignées en liberté dans le laboratoire de l’insectarium">
+							<figcaption class="dark">
+								Le résultat spectaculaire de l'élevage en liberté de Néphiles dorées dans le laboratoire de l’Insectarium
+							</figcaption>
+						</figure>
+						<p>
+							Il est ainsi possible de réduire grandement le taux de cannibalisme mais il est impossible de l'endiguer. Cette solution est toutefois contraignante pour atteindre des proportions industrielles, car très couteuse en espace et en nourriture. On pourrait chercher à utiliser des araignées qui peuvent cohabiter entre elles, mais ces dernières produisent généralement peu de soie par rapport aux cannibales.
+						</p>
+						<p>
+							Une autre contrainte que l'on doit affronter est la production de la soie par les araignées qui est loin d'être infinie, elle est même plutôt lente par rapport à celle des vers à soie. De plus, les toiles sont uniques, automatiser leur récolte semble dès lors irréalisable. Il serait donc nécessaire d'utiliser des personnes pour cela, et leur tâche serait ardue : le fil est si fin qu'il passe souvent inaperçu. D'autant plus que les espèces nécessitent des conditions ambiantes bien particulières. Par exemple, les Néphiles dorées de l'Insectarium, qui produisent tout de même un des fils les plus solides, ont besoin d'environ 50% d'humidité et une température entre 20°C et 25°C.
+						</p>
+
+						<p>
+							Pour contourner ces problèmes, une autre piste a été trouvée : reproduire de la soie d'araignée de manière artificielle. Par exemple en faisant produire les protéines de soie à d'autres organismes via la transgenèse. Cette technique consiste à transférer un gène dans un organisme pour qu'il s'y exprime, l'organisme est alors génétiquement modifié, c'est un OGM. Des chercheurs ont trouvé le gène responsable de la production de la protéine de soie chez les araignées, qu'il a été possible d'isoler. Différentes équipes ont par la suite essayé de faire lire ce gène à d'autres organismes pour tenter d'imiter la production de la soie.
+						</p>
+						<figure class="center" style="width:600px">
+							<img src="img/III/transgenese.gif" alt="Schéma récapitulatif du principe de transgenèse">
+							<figcaption class="light">
+								Schéma récapitulatif du principe de transgenèse
+								<span>
+									theimagen.eu
+									<a class="light" href="http://tpe-surhomme.e-monsite.com/medias/images/schema-transgenese.gif?fx=r_660_660" title="source de l'image" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+								</span>
+							</figcaption>
+						</figure>
+						<p>
+							Les premières tentatives ont été faites dans les années 1990 avec des mammifères en raison des ressemblances entre les glandes séricigènes des araignées et les glandes mammaires d’un mammifère. Ainsi, des chèvres sont parvenues à produire un lait contenant ces protéines. Il a ensuite fallu suivre un processus complexe pour aboutir à une fibre similaire à celle des araignées, baptisée BioSteel pour rappeler sa solidité comparable à l'acier. La qualité et la quantité de la fibre résultante ont toutefois été jugées trop faibles par rapport aux coûts engendrés. Des hamsters ont aussi été sujets à des expérimentations, mais là encore, la production s'est révélée insuffisante pour être entreprise à plus grande échelle.
+							L'idée a été a nouveau mise à l'épreuve avec des vers. Ces derniers produisant déjà de la soie pour leur cocon, ils sont a priori de bons candidats, surtout que des élevages existent déjà et ce depuis longtemps. Mais le gène introduit n'a eu que très peu d'effet sur leur soie, qui est à peine d'origine arachnéenne.
+							D'autres scientifiques se sont penchés sur les végétaux, avec la plante de tabac. Comparé aux tentatives sur des animaux, celle-ci à l'avantage d'un coût très faible. Cependant, ces plants ont été rendus stériles par l'implémentation du gène ce qui complique la production sur le long terme.
+						</p>
+						<div class="galerie col-12">
+							<figure style="width:250px">
+								<img src="img/III/chevre.jpg" alt="Chèvre">
+								<figcaption class="dark">
+									Chèvre
+									<span>
+										futura-sciences.com
+										<a class="dark" href="https://fr.cdn.v5.futura-sciences.com/buildsv6/images/mediumoriginal/7/e/9/7e9a21b78e_86750_02-121.jpg" title="source de l'image" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+									</span>
+								</figcaption>
+							</figure>
+							<figure class="dark" style="width:240px">
+								<img src="img/III/vers.jpg" alt="Vers à soie">
+								<figcaption class="dark">
+									Vers à soie
+									<span>
+										youtube.com
+										<a class="dark" href="https://i.ytimg.com/vi/l3nKyTd07jc/maxresdefault.jpg" title="source de l'image" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+									</span>
+								</figcaption>
+							</figure>
+							<figure style="width:240px">
+								<img src="img/III/tabac.jpg" alt="Plante de tabac">
+								<figcaption class="dark">
+									Plante de tabac
+									<span>
+										phys.org
+										<a class="dark" href="https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2019/tobaccoplants.jpg" title="source de l'image" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+									</span>
+								</figcaption>
+							</figure>
+						</div>
+						<p>
+							Les chercheurs n'ont pas cessé d'explorer des pistes pour atteindre cet objectif de biomimétisme. La solution viendrait peut-être d'une bactérie qui malgré certains coûts est utilisée par AMSilk, une entreprise allemande qui prétend être capable de produire de la soie d'araignée en quantité industrielle. Ses chercheurs ont modifié génétiquement toujours selon le même principe de transgenèse la bactérie Escherichia coli. Les résultats sont prometteurs si bien que plusieurs types de fils sont déjà en vente auprès de l'industrie cosmétique et textile. Un prototype de chaussures de sport a d'ailleurs été développé en collaboration avec Addidas. L'idée était surtout de promouvoir les matériaux biodégradables : la chaussure peut en effet être parfaitement décomposée avec une enzyme spéciale, et ce en moins de deux jours.
+						</p>
+						<div class="galerie col-12">
+							<figure style="width:400px">
+								<img src="img/III/amsilk.jpg" alt="Une machine de AMSilk, produisant du fil de soie d'araignée à partir de bactéries">
+								<figcaption class="dark">
+									Les machines de AMSilk, produisant des fibres de soie d'araignée
+									<span>
+										labiotech.eu
+										<a class="dark" href="https://294305267s7hqfks2cfh08ip-wpengine.netdna-ssl.com/wp-content/uploads/2016/11/csm_modul08-fiber-of-development_cb32c70e94.png" title="source de l'image" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+									</span>
+								</figcaption>
+							</figure>
+							<figure class="dark" style="width:332px">
+								<img src="img/III/chaussures.jpg" alt="Prototype de chaussures biodégradables en soie semblable à celles des araignées">
+								<figcaption class="dark">
+									Prototype de chaussures biodégradables en soie semblable à celles des araignées
+									<span>
+										labiotech.eu
+										<a class="dark" href="https://294305267s7hqfks2cfh08ip-wpengine.netdna-ssl.com/wp-content/uploads/2016/11/adidas-biodegradable-2-1-e1479467553190.jpg" title="source de l'image" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+									</span>
+								</figcaption>
+							</figure>
+						</div>
+						<p>
+							Produire la protéine de soie d'araignée n'est pas suffisant, il reste à la filer. Le mécanisme avec lequel l'araignée forme sa soie est très particulier ce qui le rend difficile à reproduire. Un appareil a pourtant été mis au point pour simuler le canal par lequel passent les protéines de soie dans l'araignée. Cela revient à injecter les protéines dans des tubes de verre extrêmement fins pour reproduire la pression. Tout ceci se fait juste au dessus d'une solution au PH très bas qui remplace l’acidité importante que l’on trouve dans le sang de l’araignée. C'est d'ailleurs dans ce dernier qu'a lieu la solidification du fil de soie.
+						</p>
+						<p>
+							Si la production de soie d'arachnide par l'élevage n'est pas chose facile en raison de la nature territoriale et carnivore des araignées, elle reste de bien meilleure qualité que celle qu'on peut obtenir par synthèse ou bien par OGM. Ces méthodes alternatives souffrent chacune de défauts dans les méthodes de production, et n'ont pas toutes les caractéristiques que l'on recherche dans la soie. La composition à la sortie des glandes est en effet exceptionnelle, et les mécanismes de tissage de l'araignée n'y sont pas pour rien. La difficulté de les reproduire justifie le grand nombre d'essais qui ont été menés, mais la maîtrise de ces techniques, quoi que bien avancée, nécessite encore des progrès pour voir l'usage de la soie d'araignée se démocratiser.
+						</p>
+						<h2 id="3"><span class="nb">3</span>La réutilisation de la forme de la toile</h2>
+						<div class="col-12"><span class="titre-question">QUESTION</span></div>
+						<div class="question">
+							<h3>Pour quelles raisons la forme de la toile d’araignée est-elle utile en architecture?</h3>
+							<ul>
+								<li>
+									<button id="A3" class="btn btn-dark" type="button" onclick="q(3, 'A')">A</button>
+									Car elle isole thermiquement
+								</li>
+								<li>
+									<button id="B3" class="btn btn-dark" type="button" onclick="q(3, 'B')">B</button>
+									Car elle est plus facile à mettre en place
+								</li>
+								<li>
+									<button id="C3" class="btn btn-dark" type="button" onclick="q(3, 'C')">C</button>
+									Car elle est plus solide et risque moins de se casser
+								</li>
+							</ul>
+							<em id="msg3" class="rep"></em>
+						</div>
+						<p>
+							Comme nous l’avons vu précédemment, la forme singulière de la toile d’araignée lui donne des propriétés intéressantes. Puisque la soie elle-même est dure à reproduire, plusieurs ingénieurs se sont consolés en exploitant plutôt la forme de la toile elle-même. C’est ainsi qu’en architecture nous avons désormais des structures à l’image de la toile d’araignée en remplaçant juste la soie classique par des par des câbles d’acier. On peut recouvrir l’ensemble d’une mince cloison ou y placer des carreaux de verre, auquel cas il faut remplacer les câbles par des poutres d’acier. La toiture ainsi formée est donc très légère, ce qui fait que dans le cas où elle s'écroulerait, elle provoquerait beaucoup moins de dommages. Et à l’instar des toiles d’araignées, la destruction d’une partie de ce toit n'endommage même pas le reste. Enfin, en plus de la légèreté et de la sécurité qu’elle offre, cette forme est beaucoup plus rapide à construire. En effet ces toits sont optimisés pour recouvrir le plus d’espace avec le moins de matière possible. On retrouve donc de nombreux édifices bâtis à l’image de toile d’araignée comme le centre commercial Fiera Milano en Italie :
+						</p>
+							<figure class="center" style="width:600px">
+								<img src="img/III/fiera milano.jpg" alt="Le bâtiment du Fiera Milano au toit en inspirations arachnéennes">
+								<figcaption class="dark">
+								Le bâtiment du Fiera Milano au toit en inspirations arachnéennes
+									<span>
+										expoblognetwork.it
+										<a class="dark" href="http://www.fieramilano.it/sites/default/files/imagelistpint/023%20%20xxx.jpg" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+									</span>
+								</figcaption>
+							</figure>
+						<p>
+							Ou encore le centre Pompidou de Metz :
+						</p>
+							<figure class="center" style="width:600px">
+								<img src="img/III/pompidou.jpg" alt="Le Centre Pompidou à Metz">
+								<figcaption class="dark">
+									Le Centre Pompidou
+									<span>
+										pinimg.com
+										<a class="dark" href="https://i.pinimg.com/originals/20/46/80/20468074b7ae08e47313c0c1d3532385.jpg" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+									</span>
+								</figcaption>
+							</figure>
+						<p>
+							L’intérêt qui est porté à cette architecture dépend aussi de la beauté qui lui est attribuée. En effet la forme de la toile d’araignée inspire les artistes comme Tomàs Saraceno, qui crée des réseaux de la forme d’une toile d’araignée. Il fait visiter de gigantesques expositions avec 76 toiles d’araignées aux dimensions immenses et à la complexité digne d'une véritable araignée. Il a également conçu une œuvre dont le nom est “ALGO-R(H)I(Y)THMS” et qui permet de jouer de la musique avec une toile d’araignée.
+						</p>
+							<figure class="center" style="width:600px">
+								<img src="img/III/tomas.jpg" alt="Exposition de Tomàs Saraceno">
+								<figcaption class="dark">
+									ALGO-R(H)I(Y)THMS, œuvre de Tomàs Saraceno
+									<span>
+										lemonde.fr
+										<a class="dark" href="https://img.lemde.fr/2018/10/15/0/0/3500/2333/688/0/60/0/1544024_GFM102_FRANCE-ART-TOMASSARACENO_1015_11.JPG" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+									</span>
+								</figcaption>
+							</figure>
+						<p>
+							Intrigant n'est ce pas? La toile résonne à une certaine fréquence, créant un son en présence de nombreux phénomènes comme des changements de température, de pollution, de phénomènes climatiques, aux mouvements des autres araignées environnantes ou même à des désintégrations de météorites. Le problème est que ces sons sont extrêmement faibles, ce qui a conduit Tomàs Saraceno à son idée de génie : poser des micros sur sa structure. Faire simplement vibrer un fil provoque un bruit apaisant durant quelques instants en plus de ce que l’on entend en quasi-permanence. Une professeur de chant a décrit ce que l’on entend de : “5 sons différents dont la répartition semble aléatoire, le timbre est entre la flûte de pan et le carillon et les nuances sont très douces. Ça pourrait même être une musique de relaxation mais cela ne forme pas vraiment une mélodie”.
+						</p>
+
+					</div> <!--End text-->
+					<div class="row quick-nav">
+						<div class="flex-container col-12">
+							<a class="btn btn-outline-success" href="II.html" role="button">❮ Page précédente</a>
+							<a class="btn btn-outline-success clean" href="III.html" role="button">Partie III</a>
+							<a class="btn btn-outline-success" href="conclusion.html" role="button">Page suivante ❯</a>
+						</div>
+					</div> <!--End quick nav-->
+				</div> <!--End article-->
+				<div class="cote cote-droit col-lg-2-5"></div> <!--Right pannel-->
+
+
+			</div> <!--End page-->
+		</div> <!--End container-->
+
+
+		<footer class="container-fluid">
+			<div class="row">
+				<div class="colonne col-lg-3 col-md-10 offset-1 offset-lg-3">
+					<h4 class="categorie">LA TOILE ET L'HOMME</h4>
+					<ol class="info">
+						<li>Ce site a été réalisé dans le cadre de Travaux Personnels Encadrés de Première scientifique. Il traite de la toile d'araignée sous tous ses aspects, dans l'optique de faire partager ses secrets au plus grand nombre.</li>
+					</ol>
+				</div>
+				<div class="colonne col-lg-2 col-md-10 offset-1 offset-lg-0">
+					<h4 class="categorie">PLAN DU SITE</h4>
+					<ol class="info">
+						<li><a class="link" href="index.html">Introduction</a></li>
+						<li><a class="link" href="I.html">Partie I</a></li>
+						<li><a class="link" href="II.html">Partie II</a></li>
+						<li><a class="link" href="III.html">Partie III</a></li>
+						<li><a class="link" href="conclusion.html">Conclusion</a></li>
+						<li><a class="link" href="annexe.html">Annexe</a></li>
+					</ol>
+				</div>
+				<div class="colonne col-lg-2 col-md-10 offset-1 offset-lg-0">
+					<h4 class="categorie">AUTEURS</h4>
+					<ol class="info">
+						<li>Natan Doubez</li>
+						<li>Théo Pascoal</li>
+						<li>Romain Benoit</li>
+						<li>—</li>
+						<li><a class="link" href="mailto:romainbenoit21560@gmail.com">Contactez-nous</a></li>
+					</ol>
+				</div>
+				<div class="col-lg-2 col-md-10 offset-lg-0 offset-md-1 button-container">
+					<a class="cd-top js-cd-top bottom-button" href="#"><i class="fas fa-angle-up"></i></a>
+				</div>
+			</div>
+			<div class="row line">
+				<div class="col-12 copyrights">Copyright © Tous droits réservés, ou presque | Site réalisé par Romain Benoit</div>
+			</div>
+		</footer>
+
+		<!-- Javascript -->
+	    <!-- Back To Top JS -->
+	<script type="text/javascript" src="js/backtotop.js"></script>
+	<!-- jQuery first -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<!-- jQuery Parallax -->
+		<script type="text/javascript" src="js/parallax.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#III').parallax("center", 600, 0.3, true);
+			})
+		</script>
+		<!-- Popper.js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/ulg/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.js"></script>
+		<!-- MathJax -->
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+	</body>
+	</html>

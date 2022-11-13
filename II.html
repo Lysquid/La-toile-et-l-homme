@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<!-- Title -->
+	<title>II. Quels sont les propriétés physiques de la toile? | La toile et l'Homme</title>
+	<!-- Meta-data -->
+	<meta charset="utf-8">
+	<meta http-equiv="content-Type" content="text/html" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="Production finale de TPE : Comment l’Homme peut-il s’inspirer des propriétés de la toile d’araignée? Il s'agit d'étudier la soie et la toile de cet arachnide à toutes les échelles pour en tirer leurs intérêts biomimétiques. Cette page traite des propriétés surprenantes d'élasticité et de solidité de la soie d'araignée, en se penchant sur sa composition moléculaire et la déformation du fil à diffrentes échelles." />
+	<meta name="keywords" content="toile, toiles, araignée, argaingnées, soie, biomimétisme, toile d'araignée, toiles d'araignées, toile et l'homme, homme, biomatériau, protéine de soie, TPE, travaux pratiques encadrés, fil, fil de soie, soie d'araignée, soie, applications soie d'araignée, biomimétisme araignée, arachnide, TPE 2019, physique svt, svt physique, matière et forme, TPE, TPE araignée, TPE soie, TPE soie d'araignée, arenae, futur, matériau futur, matériau solide, matériau élastique, matériau solide et élastique, fibroïne, fibroine, séricine, protéines de soie d'araignée, protéine de soie d'araignée, protéines de soie, solidité soie, élasticité soie, élongation, feuillet-bêta, hélice alpha, déformation soie, cadre toile, déformation fil, propriétés soie, propriétés soie d'arignée, solidité soie, élasticité soie, solidité soie d'araignée, élasticité soie d'araignée, expérience soie d'araignée, expérience fil d'araignée" />
+	<meta name="author" content="Romain Benoit, Natan Doubez, Théo Pascoal" />
+	<!-- CSS -->
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|Titillium+Web" rel="stylesheet">
+	<link rel="stylesheet" href="css/fontawesome.css">
+	<!-- My CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Scipts -->
+	<script>
+		function affichage(id, rep, bonne) {
+			var id = id.toString();
+			document.getElementById('A'+id).style.backgroundColor = 'var(--second-color)';
+			document.getElementById('B'+id).style.backgroundColor = 'var(--second-color)';
+			document.getElementById('C'+id).style.backgroundColor = 'var(--second-color)';
+			document.getElementById('A'+id).style.pointerEvents = 'none';
+			document.getElementById('B'+id).style.pointerEvents = 'none';
+			document.getElementById('C'+id).style.pointerEvents = 'none';
+			document.getElementById(rep+id).style.backgroundColor = 'var(--warning-color)';
+			document.getElementById(bonne+id).style.backgroundColor = 'var(--main-color)';
+		}
+		function msg(id, txt) {
+			document.getElementById('msg'+id).innerHTML = txt
+		}
+
+		function q(id, rep) {
+			if (id==1) {
+				affichage(id, rep, 'A')
+				if (rep=='A') {
+					msg(id, `Et oui, bien que le diamant ait été détrôné, il reste le matériau naturel le plus dur. Mais la soie d'araignée a
+						d'autres avantages :`)
+				}
+				if (rep=='B') {
+					msg(id, `Cela peut être difficle à concevoir car on voit rarement des fils de soie du diamètre d'un cable d'acier, mais la soie est belle et bien plus solide! Voyons pourquoi :`)
+				}
+				if (rep=='C') {
+					msg(id, `On considère que la soie d'araignée est 4 à 7 fois plus élastique que le Kevlar, c'est notamment là qu'elle peut rivaliser avec ce matériau dans la fabrication de gilet pare-balles. Voyons d'où la soie tire cette propriété :`)
+				}
+			}
+			if (id==2) {
+				affichage(id, rep, 'B')
+				if (rep=='A') {
+					msg(id, `Ce n'est pas si simple, car en tirant assez, la forme du fil se figera. Explications :`)
+				}
+				if (rep=='B') {
+					msg(id, `En effet, le fil d’araignée peut retourner à sa forme initiale et peut aussi rester déformé en fonction de la force exercée. Cerchons à comprendre ce qui crée cette spécificité :`)
+				}
+				if (rep=='C') {
+					msg(id, `On pourrait en effet croire que la déformation reste figée, mais cela n'est vrai que si l'on tire assez fort. Cependant la soie d’araignée a des propriétés supplémentaires :`)
+				}
+			}
+			if (id==3) {
+				affichage(id, rep, 'A')
+				if (rep=='A') {
+					msg(id, `Cela explique la complexité du protocole de sa création, car grâce à sa charpente elle peut résister à la destruction de certaines parties de la toile. Voici donc comment cela est possible :`)
+				}
+				if (rep=='B') {
+					msg(id, `Et non, si c'était le cas, l'araignée ne se donnerait pas la peine de construire une structure aussi complexe! Découvrez ce qui se déroule réellement :`)
+				}
+				if (rep=='C') {
+					msg(id, `L'araignée a plus d'un tour dans son sac, la résistance propre à l'architecture de sa toile en fait partie :`)
+				}
+			}
+		}
+	</script>
+
+</head>
+<body>
+
+	<div class="container-fluid">
+		<div class="partie" id="II">
+			<header class="row">
+				<div class="col-12 navbar navbar-dark">
+					<a class="titre navbar-brand" href="index.html"><i class="fas fa-spider"></i>La toile et l'Homme</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<nav class="collapse navbar-collapse" id="navbarNav">
+						<div class="barre"></div>
+						<ol class="main-ol">
+							<li><a href="index.html">Introduction</a></li>
+							<li><a href="I.html">I. Comment l'araignée tisse-t-elle sa toile?</a></li>
+							<li><a class="active" href="II.html">II. Quelles sont les propriétés physiques de la toile?</a></li>
+							<ol class="sub-ol">
+								<li><a href="#1">1. La structure microscopique de la soie à l'origine de la solidité et de l'élasticité</a></li>
+								<li><a href="#2">2. La déformation originale du fil</a></li>
+								<li><a href="#3">3. L’avantage de la forme de la toile</a></li>
+							</ol>
+							<li><a href="III.html">III. Comment l'Homme peut-il s'inspirer de la toile?</a></li>
+							<li><a href="conclusion.html">Conclusion</a></li>
+							<li><a href="annexe.html">Annexe</a></li>
+						</ol>
+					</nav>
+				</div>
+
+			</header>
+			<div class="sous-titre row flex-container">
+				<h1 class="long">II. Quelles sont les propriétés physiques de la toile?</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="page row">
+			<div class="cote cote-gauche col-lg-2-5">
+				<nav class="menu">
+					<ol class="main-ol">
+						<li><a href="index.html">Introduction</a></li>
+						<li><a href="I.html">I. Comment l'araignée tisse-t-elle sa toile?</a></li>
+						<li><a class="active" href="II.html">II. Quelles sont les propriétés physiques de la toile?</a></li>
+						<ol class="sub-ol">
+							<li><a href="#1">1. La structure microscopique de la soie à l'origine de la solidité et de l'élasticité</a></li>
+							<li><a href="#2">2. La déformation originale du fil</a></li>
+							<li><a href="#3">3. L’avantage de la forme de la toile</a></li>
+						</ol>
+						<li><a href="III.html">III. Comment l'Homme peut-il s'inspirer de la toile?</a></li>
+						<li><a href="conclusion.html">Conclusion</a></li>
+						<li><a href="annexe.html">Annexe</a></li>
+					</ol>
+				</nav>
+			</div> <!--Left pannel-->
+			<div class="article col-lg-7 container-fluid">
+				<div class="row">
+					<p class="intro">
+						L'araignée tisse donc sa toile selon un processus complexe, que ce soit pour produire la soie et mettre en forme le piège. Mais la particularité d'une telle structure vient surtout de ses propriétés hors-normes qui résident en elle et dans sa soie, dont l'analyse nous permettra de déterminer l'intérêt qu'elle représente pour l'Homme.
+					</p>
+					<h2 id="1"><span class="nb">1</span>La structure microscopique de la soie à l'origine de la solidité et de l'élasticité</h2>
+					<div class="col-12"><span class="titre-question">QUESTION</span></div>
+					<div class="question">
+						<h3>La soie d’araignée n’est pas :</h3>
+						<ul>
+							<li>
+								<button id="A1" class="btn btn-dark" type="button" onclick="q(1, 'A')">A</button>
+								Plus dure que le diamant
+							</li>
+							<li>
+								<button id="B1" class="btn btn-dark" type="button" onclick="q(1, 'B')">B</button>
+								Plus solide que l’acier
+							</li>
+							<li>
+								<button id="C1" class="btn btn-dark" type="button" onclick="q(1, 'C')">C</button>
+								Plus élastique que le Kevlar
+							</li>
+						</ul>
+						<em id="msg1" class="rep"></em>
+					</div>
+					<div>
+						<figure class="right" style="width:350px">
+							<img src="img/II/fibroine.jpg" alt="Coupe d'un fil de soie d'araignée au microscope">
+							<figcaption class="dark">
+								Coupe d'un fil de soie d'araignée au microscope x2000
+								<span>
+									liquidarea.com
+									<a class="dark" href="https://i0.wp.com/www.liquidarea.com/wp-content/uploads/2012/01/fibroina.jpg" title="source de l'image" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+								</span>
+							</figcaption>
+						</figure>
+						<p>
+							Comme nous l’avons vu et vérifié par l'expérience du biuret, la soie est constituée de protéines. On en distingue deux principales : la fibroïne à hauteur de 63% qui constitue la partie centrale du fil, ainsi que 22% de séricine formant une enveloppe autour de cette partie centrale, comme sur l’observation microscopique ci-contre. Les 15% restants représentent des matières grasses et de l’eau.
+						</p>
+					</div>
+					<p>
+						La séricine est responsable de la couleur du fil ainsi que de son imperméabilité, nous la laisserons donc de côté pour étudier la fibroïne qui est à l’origine des propriétés mécaniques de la soie.
+						Ces propriétés sont dues à l’agencement particulier que prennent les acides aminés au moment du tissage. En effet, certains s’assemblent selon une structure très ordonnée en plis successifs que l’on appelle feuillet β. Ces feuillets s’empilent de façon antiparallèle c’est-à-dire que chacun est dans le sens opposé à ses voisins. Cela leur permet de faire correspondre les éléments oxygène de l’un aux hydrogènes de l’autre pour former des liaisons hydrogènes représentées en vert sur le schéma. Ces liaisons très nombreuses rendent les molécules presque inséparables, c’est de là que la soie tire sa solidité exceptionnelle.
+					</p>
+					<div class="galerie col-12">
+						<figure style="width:450px">
+							<img src="img/II/feuillet-beta.jpg" alt="Schéma de la structure du fil à plusieurs échelles">
+							<figcaption class="light">
+								Structure d'un feuillet β antiparallèle : les brins β ont des directions opposées, ce qui favorise les liaisons hydrogènes.
+								<span>
+									docplayer.fr
+									<a class="light" href="https://docplayer.fr/23254516-Les-proteines-cours-du-dr-namour-par-elo-annee-faculte-de-medecine-de-nancy-par-elo-aup1perdu.html" title="source de l'image" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+								</span>
+							</figcaption>
+						</figure>
+						<figure style="width:190px">
+							<img src="img/II/helice-alpha.jpg" alt="Schéma de la structure du fil à plusieurs échelles">
+							<figcaption class="light">
+								Hélice alpha
+								<span>
+									usherbrooke.ca
+									<a class="light" href="http://biochimiedesproteines.espaceweb.usherbrooke.ca/3alphaHelix.gif" title="source de l'image" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+								</span>
+							</figcaption>
+						</figure>
+					</div>
+					<div>
+						<figure class="right" style="width:320px">
+							<img src="img/II/structure-soie.png" alt="Schéma de la structure du fil à plusieurs échelles">
+							<figcaption class="light">
+								Schéma de la structure du fil à plusieurs échelles. Les blocs jaunes sont les feuillets bêta reliés par des hélices alpha, en noir.
+								<span>
+									wikimedia.com
+									<a class="light" href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Structure_of_spider_silk_thread_Modified.svg/440px-Structure_of_spider_silk_thread_Modified.svg.png" title="source de l'image" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+								</span>
+							</figcaption>
+						</figure>
+						<p>
+							L’assemblage des feuillets bêta donne des structures cristallines, mais elles ne forment que 10 à 25% de la fibroïne. Les autres acides aminés s’associent en effet sous forme d’hélices α, qui sont des structures bien plus désordonnées d’où le nom de composante amorphe. Ces hélices (en noir sur le schéma) relient entre elles les composantes cristallines (blocs jaunes). On peut comparer la composante amorphe à un ressort, puisqu’elle est capable de s’étirer pour atteindre plus de 30% de sa taille. C’est donc de là que le fil de soie tire son élasticité.
+							Cette étude microscopique du fil dégage deux de ces propriétés : sa solidité et son élasticité, qui sont particulièrement développées.
+						</p>
+					</div>
+					<p>
+						En effet, on estime que la solidité du fil de traîne est comparable à celle de l’acier! A diamètre égal, elle serait même cinq à dix fois plus résistante malgré le fait qu’elle soit beaucoup plus légère. Sa solidité surpasse même celle du Kevlar, un matériau à base de pétrole pourtant réputé pour compter parmi les matériaux synthétiques les plus résistants d'où son utilisation pour la fabrication de gilets pare-balles. A titre d’exemple, un câble de fil d’araignée du diamètre d’un pouce pourrait soutenir le poids de dix autobus! Dans la nature, cette solidité permet à la toile de piéger des proies bien plus grosses que l’araignée, sans céder sous leurs poids. D’autre part, les toiles peuvent supporter le poids des gouttes qui s’accumulent par la rosée ou la pluie, qui est considérable comparé à la légèreté de la soie.
+					</p>
+
+					<p>
+						L’élasticité de la soie est tout aussi hors norme, ce que nous avons confirmé avec une expérience, consistant à tirer sur un fil pour mettre en évidence son extensibilité, plus de détails dans <a href="annexe.html#elasticite">cette partie de l'annexe</a>. Nous avons filmé cette expérience afin de mesurer la différence de longueur le plus précisément possible.
+					</p>
+					<div class="col-10 offset-1 video">
+						<iframe src="https://www.youtube-nocookie.com/embed/114s7eIxFEg?showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<p>
+						Nous avons ensuite calculé son pourcentage d’élongation selon la formule suivante :
+					</p>
+					<div class="equation">
+						<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>élongation</mi><mo>=</mo><mfrac><mrow><mrow><mi>longueur finale</mi></mrow><mo>-</mo><mrow><mi>longueur initiale</mi></mrow></mrow><mrow><mi>longueur initiale</mi></mrow></mfrac><mo>*</mo><mn>100</mn><mo>=</mo><mfrac><mrow><mrow><mi>11,4</mi></mrow><mo>-</mo><mrow><mi>9,0</mi></mrow></mrow><mrow><mi>9,0</mi></mrow></mfrac><mo>*</mo><mn>100</mn><mo>≈</mo><mn>27%</mn></math>
+					</div>
+					<p>
+						Cette valeur se rapproche de la valeur théorique, estimée à 30% pour la plupart des fils.
+					</p>
+					<div class="equation">
+						<math xmlns="http://www.w3.org/1998/Math/MathML"><mi>pourcentage d'erreur</mi><mo>=</mo><mfrac><mrow><mrow><mi>| valeur théorique</mi></mrow><mo>-</mo><mrow><mi>valeur expérimentale |</mi></mrow></mrow><mrow><mi>valeur théorique</mi></mrow></mfrac><mo>*</mo><mn>100</mn><mo>=</mo><mfrac><mrow><mrow><mi>30</mi></mrow><mo>-</mo><mrow><mi>27</mi></mrow></mrow><mrow><mi>30</mi></mrow></mfrac><mo>*</mo><mn>100</mn><mo>=</mo><mn>10%</mn></math>
+					</div>
+
+					<p>
+						Ce pourcentage d’erreur de 10% peut s'expliquer par la qualité du fil qui a été utilisé, tissé certainement avant l’hiver, soit quelques mois avant que l'expérience ait été faite.
+						Cela contribue néanmoins à montrer que le fil de soie est capable d’une extension importante avant de rompre; d’après des mesures plus poussées, les fils de certaines araignées exotiques atteignent même 200% d’élongation. Cette propriété de la soie garantit à l’araignée l’efficacité de son piège, car si la soie n'était pas élastique, les proies se cogneraient simplement sur la toile et rebondiraient. Au lieu de cela, elle amortit l'impact de la proie, ce qui lui laisse plus de temps pour s’y coller.
+
+					</p>
+					<h2 id="2"><span class="nb">2</span>La déformation originale du fil</h2>
+					<div class="col-12"><span class="titre-question">QUESTION</span></div>
+					<div class="question">
+						<h3>Si l’on tire sur un fil de soie d’araignée sans pour autant le casser, va-t-il retrouver sa forme initiale?</h3>
+						<ul>
+							<li>
+								<button id="A2" class="btn btn-dark" type="button" onclick="q(2, 'A')">A</button>
+								Oui, à coup sûr
+							</li>
+							<li>
+								<button id="B2" class="btn btn-dark" type="button" onclick="q(2, 'B')">B</button>
+								Tant que l’on ne tire pas trop fort, oui
+							</li>
+							<li>
+								<button id="C2" class="btn btn-dark" type="button" onclick="q(2, 'C')">C</button>
+								Non, il restera déformé
+							</li>
+						</ul>
+						<em id="msg2" class="rep"></em>
+					</div>
+					<p>
+						Les caractéristiques de solidité et d’élasticité ont des implications intéressantes à l’échelle du fil de soie, notamment en ce qui concerne son élongation. Quand on tire sur un objet en exerçant une certaine force, il s’allonge. On peut alors mesurer son allongement en pourcentage, ce qui correspond à l’augmentation de la taille du matériau après application de la force. Selon les matériaux, les déformations sont différentes, on peut les caractériser par une courbe de la force (F) en fonction de la déformation correspondante, selon le principe suivant.
+					</p>
+					<figure class="center" style="width:700px">
+						<img src="img/II/allongement.png" alt="Exemple de courbe d'allongement">
+						<figcaption class="light">
+							Exemple de courbe d'allongement
+							<span>
+								wordpress.com
+								<a class="light" href="https://sciencetonnante.files.wordpress.com/2012/03/test-traction1.png" title="source de l'image" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+							</span>
+						</figcaption>
+					</figure>
+					<p>
+						Pour bien saisir l'originalité de la déformation du fil d'araignée, il faut d'abord s'intéresser aux différentes familles de comportements qui existent :
+					</p>
+					<ul>
+						<li><p>
+							Le comportement élastique correspond à une déformation proportionnelle à la force, la courbe est donc une droite. Une propriété importante de cette famille est qu'elle est réversible. Malgré son nom, on observe ce comportement dans la plupart des matériaux, y compris ceux très solides : si on tire sur un fil de fer, il a d’abord un comportement élastique. C’est très difficile à percevoir, mais il s’étire bel et bien de façon proportionnelle et réversible.
+						</p></li>
+						<figure class="right" style="width:280px">
+							<img src="img/II/comportements.png" alt="Courbe représentant les différents comportements de déformation">
+							<figcaption class="light">
+								Courbe des différents types de comportements
+								<span>
+									wordpress.com
+									<a class="light" href="https://sciencetonnante.files.wordpress.com/2012/03/elastique-plastique-rupture.png" title="source de l'image" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+								</span>
+							</figcaption>
+						</figure>
+						<li><p>
+							Le comportement plastique intervient en général après un comportement élastique, comme c’est le cas pour le fil de fer : c’est-à-dire que si on exerce une trop grande force, le matériau finit par se déformer en se ramollissant. Une telle déformation est irréversible. Ce comportement tire son nom des matériaux plastiques qui en sont représentatifs : si on tire sur un sac plastique, il se déforme de plus en plus et il devient impossible de lui rendre sa forme initiale.
+						</p></li>
+						<li><p>
+							Enfin, un matériau atteint inévitablement un point de rupture quand la force exercée devient trop grande.
+						</p></li>
+					</ul>
+					<p>
+						Le fil d’araignée se démarque d’abord par sa résistance à la rupture (ici, en traction) particulièrement élevée qui découle de sa solidité; il faut donc exercer une force importante avant de voir le fil céder. Cela s’appelle la résistance à la rupture en traction, et se mesure en Pascals. Sa valeur pour la soie d’araignée est d'environ 1000 MPa, alors que l’acier tourne autour de 500 MPa. Mais la réelle originalité du fil d’araignée par rapport aux matériaux plus classiques réside dans sa courbe de déformation.
+
+					</p>
+					<figure class="center" style="width:300px">
+						<img src="img/II/allongement-soie.png" alt="Courbe de déformation du fil d'araignée">
+						<figcaption class="light">
+							Courbe de déformation du fil d'araignée
+							<span>
+								wordpress.com
+								<a class="light" href="https://sciencetonnante.files.wordpress.com/2012/03/comportement-fil.png" title="source de l'image" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+							</span>
+						</figcaption>
+					</figure>
+					<p>
+						Son interprétation montre qu’en tirant sur un fil d’araignée, il commence à s’étirer selon un comportement élastique, puis se déforme définitivement selon un comportement plastique. Mais par la suite, là où d’autres matériaux atteindraient leur point de rupture, la courbe remonte subitement. Cela signifie que le fil devient extrêmement rigide avant sa rupture. Ce comportement trouve son explication dans la structure microscopique du fil, au niveau de ses protéines. Quand on commence à tirer, elles s’allongent, mais peuvent encore reprendre leur forme initiale. Si on tire plus fort en revanche, elles se déplient irréversiblement. C’est quand elles sont complètement dépliées qu’elles donnent au fil une rigidité surprenante.
+					</p>
+					<div>
+						<figure class="right" style="width:300px">
+							<img src="img/II/araignee-suspendue.jpg" alt="Araignée suspendue à son fil">
+							<figcaption class="dark">
+								Bien suspendue à son fil, l'araignée ne tourne pas sur elle-même
+								<span>
+									cnrs.fr
+									<a class="dark" href="http://www2.cnrs.fr/sites/communique/image/araignee2.jpg" title="source de l'image" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+								</span>
+							</figcaption>
+						</figure>
+						<p>
+							Dans la réalité, le fil n’est pas mis à l’épreuve que par des tensions, c’est-à-dire quand on tire dessus. Il faut aussi prendre en compte les torsions, qui sont courantes en particulier lorsque l’araignée se sert de son fil comme corde de rappel, pour se suspendre un peu partout. Si vous essayez de l’imiter avec une véritable corde, vous constaterez qu’il n’y a aucun moyen d’empêcher sa rotation. L’araignée, elle, reste stable au bout de son fil et peut le tisser en parfaite ligne droite malgré les perturbations ambiantes. Elle en est capable grâce à son fil sans lequel elle ne pourrait se rééquilibrer. Il possède en effet une propriété de mémoire de forme incroyable; en subissant une torsion, il va naturellement retrouver sa forme initiale. En comparaison, un fil de cuivre revient difficilement à sa forme initiale après une torsion, au prix d’un accroissement de sa fragilité. D’autres matériaux ont une propriété similaire, mais cela demande un apport conséquent d’énergie comme pour le Nitinol, puisque cet alliage doit être chauffé à 90°C pour retrouver sa forme.
+						</p>
+					</div>
+					<h2 id="3"><span class="nb">3</span>L’avantage de la forme de la toile</h2>
+					<div class="col-12"><span class="titre-question">QUESTION</span></div>
+					<div class="question">
+						<h3>Si l’on casse un fil de la toile, qu’arrive-t-il à cette dernière?</h3>
+						<ul>
+							<li>
+								<button id="A3" class="btn btn-dark" type="button" onclick="q(3, 'A')">A</button>
+								Les dégâts sont minimisés par la structure
+							</li>
+							<li>
+								<button id="B3" class="btn btn-dark" type="button" onclick="q(3, 'B')">B</button>
+								Elle devient plus solide
+							</li>
+							<li>
+								<button id="C3" class="btn btn-dark" type="button" onclick="q(3, 'C')">C</button>
+								Elle s'effondre et l’araignée doit la reconstruire
+							</li>
+						</ul>
+						<em id="msg3" class="rep"></em>
+					</div>
+					<p>
+						La résistance des toiles d’araignées ne dépend pas que des propriétés de leurs fils, leur architecture est aussi un atout. Cela a été mis en évidence par des simulations testant les conséquences de changement de paramètres de la toile. C’est ce qu’ont fait les auteurs d’un récent article de Nature, dans lequel ils ont imaginé des toiles faites de soie aux propriétés de déformation différentes; en vert, si le fil avait un comportement élastique-plastique, en bleu, un comportement purement élastique et en rouge, les propriétés bien réelles que nous avons vu précédemment.
+					</p>
+					<figure class="center" style="width:600px">
+						<img src="img/II/dommages-toiles.jpg" alt="Représentation des toiles endomagés de la simulations">
+						<figcaption class="light">
+							Les différents comportements des fils de chaque toile aboutissent à des dommages plus ou moins conséquents après impact
+							<span>
+								wordpress.com
+								<a class="light" href="https://sciencetonnante.files.wordpress.com/2012/03/dommages-toiles-e1332704682432.png" title="source de l'image" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+							</span>
+						</figcaption>
+					</figure>
+					<p>
+						Le résultat des simulations est sans appel, la toile telle qu’elle est dans la nature a subi près de six fois moins de dommages suite à un impact localisé. Quand une proie atterrit dans la toile, tout se passe donc comme si une zone limitée se sacrifie pour absorber l’énergie et l’impact et ainsi limiter les dégâts de la toile. Cela est très utile pour l’araignée qui n’a alors qu’à réparer plutôt que de reconstruire complètement. Car construire une toile est coûteux en énergie, l’araignée ne peut se le permettre à chaque proie.
+					</p>
+					<div>
+						<figure class="right" style="width:280px">
+							<img src="img/II/cadre.jpg" alt="Image d'une toile avec le cadre et le second cadre mis en valeur">
+							<figcaption class="dark">
+								Le cadre de le toile
+								<span>
+									nature.com
+									<a class="dark" href="https://media.nature.com/m685/nature-assets/srep/2016/160810/srep31265/images/srep31265-f2.jpg" title="source de l'image" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+								</span>
+							</figcaption>
+						</figure>
+						<p>
+							D’autres simulations ont été mises en œuvre pour mieux comprendre la répercussion de contraintes exercées sur la toile. Des chercheurs ont ainsi montré qu’en cas de perturbations comme une tempête, toute la toile réagit, mais quand il s’agit d’un impact localisé, le choc est atténué différemment par chaque type fil. Chacun d’eux joue un rôle dans l'absorption du choc en fonction de sa position et du type de soie qui le compose. Certains fils en particulier semblent avoir une grande importance dans la consistance de la toile, ce sont ceux qui constituent le second cadre. Nous ne les avons pas représentés dans notre maquette de la toile dans l’optique de simplifier, mais il convient maintenant de les introduire. Le second cadre, comme montré sur la photo ci-contre, est formé par des fils qui relient des côtés du cadre principal pour réduire la taille des rayons, qui se retrouveraient sinon à proximité des points d’accroche.
+						</p>
+					</div>
+					<p>
+						Ce deuxième cadre permet une meilleure élasticité de l’entièreté de la toile et donc un point de rupture plus élevé.
+						Pour montrer la nécessité du second cadre, une nouvelle simulation a été pensée, évaluant les risques qu’une toile a de céder en fonction de l’énergie d’un impact pour différentes tailles des fils du second cadre.
+					</p>
+					<figure class="center" style="width:600px">
+						<img src="img/II/graph-second-cadre.jpg" alt="Graphique des risques d'une toile de céder pour plusieurs longueurs des fils du second cadre">
+						<figcaption class="light">
+						Le graphique récapitulatif de l'étude
+							<span>
+								nature.com
+								<a class="light" href="https://www.nature.com/articles/srep31265/figures/6" title="source de l'image" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+							</span>
+						</figcaption>
+					</figure>
+					<p>
+						On obtient ce graphique, où chaque courbe représente les résultats pour des longueurs de fils du second cadre différentes (les nombres indiqués par des flèches sont des facteurs de leur longueur réelle). On constate tout de suite qu’en l'absence de second cadre, c’est-à-dire avec un facteur nul, la toile est assez fragile. En effet, son taux de rupture est celui qui augmente le plus vite, la courbe est donc située sur la gauche du graphique. En revanche, une taille plus grande réduit la probabilité de rupture comme en témoigne la courbe pour une longueur de fil réel, ce qui correspond à un facteur de 1. Lors de la construction de la toile, l’araignée essaye donc de rattacher le minimum de rayons aux segments du cadre principal proches des points d’ancrage car cela rendrait sa toile plus vulnérable. Cette étude ne porte que sur une partie des fils de la toile et n’explique donc pas totalement sa résistance remarquable. Elle montre cependant que rien n’est laissé au hasard dans la construction de la toile, la nature semble systématiquement adopter la meilleure configuration même si cela se fait inconsciemment chez l’araignée.
+					</p>
+				</div> <!--End text-->
+				<div class="row quick-nav">
+					<div class="flex-container col-12">
+						<a class="btn btn-outline-success" href="I.html" role="button">❮ Page précédente</a>
+						<a class="btn btn-outline-success clean" href="II.html" role="button">Partie II</a>
+						<a class="btn btn-outline-success" href="III.html" role="button">Page suivante ❯</a>
+					</div>
+				</div> <!--End quick nav-->
+			</div> <!--End article-->
+			<div class="cote cote-droit col-lg-2-5"></div> <!--Right pannel-->
+
+
+		</div> <!--End page-->
+	</div> <!--End container-->
+
+
+	<footer class="container-fluid">
+		<div class="row">
+			<div class="colonne col-lg-3 col-md-10 offset-1 offset-lg-3">
+				<h4 class="categorie">LA TOILE ET L'HOMME</h4>
+				<ol class="info">
+					<li>Ce site a été réalisé dans le cadre de Travaux Personnels Encadrés de Première scientifique. Il traite de la toile d'araignée sous tous ses aspects, dans l'optique de faire partager ses secrets au plus grand nombre.</li>
+				</ol>
+			</div>
+			<div class="colonne col-lg-2 col-md-10 offset-1 offset-lg-0">
+				<h4 class="categorie">PLAN DU SITE</h4>
+				<ol class="info">
+					<li><a class="link" href="index.html">Introduction</a></li>
+					<li><a class="link" href="I.html">Partie I</a></li>
+					<li><a class="link" href="II.html">Partie II</a></li>
+					<li><a class="link" href="III.html">Partie III</a></li>
+					<li><a class="link" href="conclusion.html">Conclusion</a></li>
+					<li><a class="link" href="annexe.html">Annexe</a></li>
+				</ol>
+			</div>
+			<div class="colonne col-lg-2 col-md-10 offset-1 offset-lg-0">
+				<h4 class="categorie">AUTEURS</h4>
+				<ol class="info">
+					<li><span>Natan Doubez</span></li>
+					<li><span>Théo Pascoal</span></li>
+					<li><span>Romain Benoit</span></li>
+					<li>—</li>
+					<li><a class="link" href="mailto:romainbenoit21560@gmail.com">Contactez-nous</a></li>
+				</ol>
+			</div>
+			<div class="col-lg-2 col-md-10 offset-lg-0 offset-md-1 button-container">
+				<a class="cd-top js-cd-top bottom-button" href="#"><i class="fas fa-angle-up"></i></a>
+			</div>
+		</div>
+		<div class="row line">
+			<div class="col-12 copyrights">Copyright © Tous droits réservés, ou presque | Site réalisé par Romain Benoit</div>
+		</div>
+	</footer>
+
+	<!-- Javascript -->
+    <!-- Back To Top JS -->
+	<script type="text/javascript" src="js/backtotop.js"></script>
+	<!-- jQuery first -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<!-- jQuery Parallax -->
+	<script type="text/javascript" src="js/parallax.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#II').parallax("center", 600, 0.3, true);
+		})
+	</script>
+
+	<!-- Bootstrap JS -->
+	<script src="js/bootstrap.js"></script>
+	<!-- MathJax -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+</body>
+</html>

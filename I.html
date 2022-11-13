@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<!-- Title -->
+	<title>I. Comment l'araignée tisse-t-elle sa toile? | La toile et l'Homme</title>
+	<!-- Meta-data -->
+	<meta charset="utf-8">
+	<meta http-equiv="content-Type" content="text/html" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<meta name="description" content="Production finale de TPE : Comment l’Homme peut-il s’inspirer des propriétés de la toile d’araignée? Il s'agit d'étudier la soie et la toile de cet arachnide à toutes les échelles pour en tirer leurs intérêts biomimétiques. Cette page traite de la production de la soie par l'araignée et du tissage de sa toile." />
+	<meta name="keywords" content="toile, toiles, araignée, argaingnées, soie, biomimétisme, toile d'araignée, toiles d'araignées, toile et l'homme, homme, biomatériau, protéine de soie, TPE, travaux pratiques encadrés, fil, fil de soie, soie d'araignée, soie, applications soie d'araignée, biomimétisme araignée, arachnide, TPE 2019, physique svt, svt physique, matière et forme, TPE, TPE araignée, TPE soie, TPE soie d'araignée, arenae, futur, matériau futur, matériau solide, matériau élastique, matériau solide et élastique, glandes séricigènes, toile géométrique, forme toile, protéines de soie d'araignée, protéine de soie d'araignée, protéines de soie, tissage, tisser toile, piège toile, toiles géométriques, orbitèles, maquette toile d'araignée, glandes araignée, expérience soie d'araignée, expérience fil d'araignée" />
+	<meta name="author" content="Romain Benoit, Natan Doubez, Théo Pascoal" />
+	<!-- CSS -->
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito|Titillium+Web" rel="stylesheet">
+	<link rel="stylesheet" href="css/fontawesome.css">
+	<!-- My CSS -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Scipts -->
+	<script>
+		function affichage(id, rep, bonne) {
+			var id = id.toString();
+			document.getElementById('A'+id).style.backgroundColor = 'var(--second-color)';
+			document.getElementById('B'+id).style.backgroundColor = 'var(--second-color)';
+			document.getElementById('C'+id).style.backgroundColor = 'var(--second-color)';
+			document.getElementById('A'+id).style.pointerEvents = 'none';
+			document.getElementById('B'+id).style.pointerEvents = 'none';
+			document.getElementById('C'+id).style.pointerEvents = 'none';
+			document.getElementById(rep+id).style.backgroundColor = 'var(--warning-color)';
+			document.getElementById(bonne+id).style.backgroundColor = 'var(--main-color)';
+		}
+		function msg(id, txt) {
+			document.getElementById('msg'+id).innerHTML = txt
+		}
+
+		function q(id, rep) {
+			if (id==1) {
+				affichage(id, rep, 'B')
+				if (rep=='A') {
+					msg(id, `La production de matière cristalline constitue les minéraux, qui sont loin d'être faciles à produire pour les êtres vivants, alors dans les quantités que l’araignée utilise, cela paraît impossible, regardons ce qu’elle produit réellement :`)
+				}
+				if (rep=='B') {
+					msg(id, `Les protéines sont très présentes dans le monde vivant, la soie d'ariagnée ne fait effectivement pas exception. Il reste encore à filer le tout pour obtenir la soie que l'on connait, voici comment l'araignée procède :`)
+				}
+				if (rep=='C') {
+					msg(id, `Et non, elle ne se nourrit pas de végétaux et ne pourrait pas en manipuler autant, élucidons ce mystère de synthétisation :`)
+				}
+			}
+			if (id==2) {
+				affichage(id, rep, 'A')
+				if (rep=='A') {
+					msg(id, `En effet le tissage de la toile prend en moyenne 1h car pour que sa toile tienne la route, il faut respecter intégralement ce protocole :`)
+				}
+				if (rep=='B') {
+					msg(id, `Le protocole du tissage de la toile est complexe, long et méthodique, car si elle place certains fils avant d’autres, la structure ne peut tenir. Voici ce qu’elle fait dans la pratique :`)
+				}
+				if (rep=='C') {
+					msg(id, `La toile dont nous parlons ici est trop complexe pour être créée aléatoirement. Voici ce que vous avez du oublier :`)
+				}
+			}
+		}
+	</script>
+
+</head>
+<body>
+
+	<div class="container-fluid">
+		<div class="partie" id="I">
+			<header class="row">
+				<div class="col-12 navbar navbar-dark">
+					<a class="titre navbar-brand" href="index.html"><i class="fas fa-spider"></i>La toile et l'Homme</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<nav class="collapse navbar-collapse" id="navbarNav">
+						<div class="barre"></div>
+						<ol class="main-ol">
+							<li><a href="index.html">Introduction</a></li>
+							<li><a class="active" href="I.html">I. Comment l'araignée tisse-t-elle sa toile?</a></li>
+							<ol class="sub-ol">
+								<li><a href="#1">1. Production et nature de la soie</a></li>
+								<li><a href="#2">2. La construction de la structure de la toile</a></li>
+							</ol>
+							<li><a href="II.html">II. Quelles sont les propriétés physiques de la toile?</a></li>
+							<li><a href="III.html">III. Comment l'Homme peut-il s'inspirer de la toile?</a></li>
+							<li><a href="conclusion.html">Conclusion</a></li>
+							<li><a href="annexe.html">Annexe</a></li>
+						</ol>
+					</nav>
+				</div>
+
+			</header>
+			<div class="sous-titre row flex-container">
+				<h1 class="long">I. Comment l'araignée tisse-t-elle sa toile?</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="page row">
+			<div class="cote cote-gauche col-lg-2-5">
+				<nav class="menu">
+					<ol class="main-ol">
+						<li><a href="index.html">Introduction</a></li>
+						<li><a class="active" href="I.html">I. Comment l'araignée tisse-t-elle sa toile?</a></li>
+						<ol class="sub-ol">
+							<li><a href="#1">1. Production et nature de la soie</a></li>
+							<li><a href="#2">2. La construction de la structure de la toile</a></li>
+						</ol>
+						<li><a href="II.html">II. Quelles sont les propriétés physiques de la toile?</a></li>
+						<li><a href="III.html">III. Comment l'Homme peut-il s'inspirer de la toile?</a></li>
+						<li><a href="conclusion.html">Conclusion</a></li>
+						<li><a href="annexe.html">Annexe</a></li>
+					</ol>
+				</nav>
+			</div> <!--Left pannel-->
+			<div class="article col-lg-7 container-fluid">
+				<div class="row">
+					<p class="intro">
+						La première étape pour élucider les intérêts de la toile pour l'Homme est de comprendre sa constitution, que ce soit à petite échelle en mettant en lumière les composants de la soie ou à plus grande échelle par l’analyse du tissage de la toile.
+					</p>
+					<h2 id="1"><span class="nb">1</span>Production et nature de la soie</h2>
+					<div class="col-12"><span class="titre-question">QUESTION</span></div>
+					<div class="question">
+						<h3>De quoi est composé un fil d’araignée?</h3>
+						<ul>
+							<li>
+								<button id="A1" class="btn btn-dark" type="button" onclick="q(1, 'A')">A</button>
+								De petits cristaux très solides
+							</li>
+							<li>
+								<button id="B1" class="btn btn-dark" type="button" onclick="q(1, 'B')">B</button>
+								De protéines
+							</li>
+							<li>
+								<button id="C1" class="btn btn-dark" type="button" onclick="q(1, 'C')">C</button>
+								D’un assemblage très dense de végétaux
+							</li>
+						</ul>
+						<em id="msg1" class="rep">Cette partie est interactive : cliquez sur la lettre correspondant à votre choix pour lever le voile sur la question!</em>
+					</div>
+					<p>
+						Bien que toutes les araignées ne tissent pas, cette espèce est largement connue pour ses fils qui hantent les maisons. Ce fil est une soie au même titre que celle produite par certaines chenilles, mais il présente bon nombre de différences. La question élémentaire qui se pose est la suivante : Quelle est la constitution de la soie du fil d’araignée? Nous avons alors émis l’hypothèse que l'araignée la produisait à partir de protéines, ces dernières étant des composantes majeures dans le monde du vivant. Pour la vérifier nous avons mis en œuvre le test du biuret dont nous avons détaillé le protocole dans <a href="annexe.html#biuret">cette section de l'annexe</a>. Elle met en évidence la présence de liaisons peptidiques (quatre au minimum) entre les protéines. Cela se fait par un changement de couleur après avoir versé quelques gouttes d’un réactif. On l’appelle le “réactif au biuret” car le biuret est la plus petite molécule qui le fait réagir. Il se forme lorsque des ions cuivre II sont présents dans un milieu basique comme de la soude, mais nous avons pu nous en procurer un flacon déjà prêt.
+					</p>
+					<div class="galerie col-12">
+						<figure style="width:240px">
+							<img src="img/exp/biuret/eau.jpg" alt="Témoin négatif du test au biuret">
+							<figcaption class="dark">
+								Témoin négatif
+							</figcaption>
+						</figure>
+						<figure style="width:240px">
+							<img src="img/exp/biuret/oeuf.jpg" alt="Témoin positif du test au biuret">
+							<figcaption class="dark">
+								Témoin positif
+							</figcaption>
+						</figure>
+						<figure style="width:240px">
+							<img src="img/exp/biuret/soie.jpg" alt="Test au biuret sur un échantillon de soie">
+							<figcaption class="dark">
+								Echantillon de soie
+							</figcaption>
+						</figure>
+					</div>
+					<p>
+						Le témoin négatif a été réalisé avec de l’eau pour assurer la nécessité de protéines pour le déroulement de la réaction. Le témoin positif, utilise un morceau blanc d’œuf que nous savons riche en protéine, il confirme la réaction avec la formation d’une tâche violette. Résultat, la couleur de notre échantillon de soie a bel et bien tourné au violet, bien qu’il ait fallu verser plus de réactif pour voir la couleur apparaître. La soie que produit l’araignée est donc effectivement constituée de protéines, même si la concentration est moindre que dans l'œuf. Des recherches plus poussées ont montré que cette soie contient deux protéines principales : la fibroïne et la séricine, dont nous verrons le rôle dans les propriétés de cette soie. De la matière grasse et de l'eau contribuent également à constituer l'ensemble. Pour former cette soie, l'araignée dispose de glandes séricigènes dans son abdomen qui produisent un liquide contenant les deux protéines. On dénombre six types de glandes différentes mais seulement deux sont sollicitées en même temps. Ce procédé permet de produire plusieurs soies, aux utilisations diverses :
+					</p>
+					<ul>
+						<li>Les glandes ampullacées majeures servent à faire les composants solides sur lesquels l'araignée repose dans sa toile. Il s’agit d’un fil non collant mais stable.</li>
+						<li>Les glandes ampullacées mineures sont comme leur nom l'indique bien moins utilisées, leur rôle se cantonne à l'ébauche de la toile</li>
+						<li>Les glandes agrégées et les flagelliformes forment le fil collant qui sert à capturer les insectes dans la toile.</li>
+						<li>Les glandes tubuliformes créent la soie qui forme des cocons pour emballer les œufs. C’est ce qui est considéré comme l’usage principal de la soie d’un point de vue évolutif puisque les premières araignées ne tissaient pas de toile.</li>
+						<li>Les glandes aciniformes produisent la soie avec laquelle l'araignée emmaillote ses proies pour les stocker et les dévorer.</li>
+					</ul>
+					<p>
+						Ce sont les principaux usages mais d’autres types de soie existent également, elles utilisent un fil de sécurité, aussi appelé fil de traîne, pour ne pas tomber : elles peuvent contrôler leurs chutes en se laisser descendre. C’est en effet avec celui-là qu’on a l’image d’une araignée qui descend du plafond. Pouvoir sécréter a volonté différentes soies est un atout de taille, même dans des situations surprenantes, comme pour recueillir le sperme du mâle qu’elle aspire ensuite. Le schéma ci-dessous récapitule plus visuellement la variété des soies et de leurs utilisations.
+					</p>
+					<figure class="center" style="width:800px">
+						<img src="img/I/glandes.jpg" alt="Schéma des glandes séricigènes avec le rôle de leur soie">
+						<figcaption class="light">
+							Les glandes de l'araignée et les soies correspondantes
+							<span>
+								semanticscholar.org
+								<a class="light" href="https://www.semanticscholar.org/paper/Sequence-Structure-Correlations-in-the-MaSp-1-of-N-Bratzel-David/9851c87c6e73bcc6b9d65d0a85b8ba6af6646380/figure/0" title="source de l'image" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+							</span>
+						</figcaption>
+					</figure>
+					<p>
+						Le liquide qu'elles produisent circule dans de minuscules tubes appelés «filières». Dans ces derniers, on observe des évolutions de l'acidité ce qui permet une cristallisation du liquide, une forte déshydratation et une augmentation de la pression. Une fois que cette pression est suffisamment forte, les protéines se lient entre elles et forment le fil de soie. Le fil se solidifie au fur et à mesure de ces échanges. Une fois sorti, l'araignée le file avec sa patte. Nous avons donc la soie d'araignée prête à être utilisée, sa vitesse de production varie beaucoup en fonction de la soie en question et de l'araignée, mais elle est nettement inférieure à celle d’autres espèces productrices de soie comme les vers à soie. Chaque fibre de soie obtenue est composée en réalité de près de 2500 nano-brins qui sont des minuscules fils arrangés parallèlement à la manière d'un câble. Comme ils sont les uns à côté des autres ils formeraient d'ailleurs une soie plus plate que cylindrique contrairement à ce que l'on pourrait penser. Nous avons essayé de déterminer un ordre de grandeur pour le diamètre d'un fil de soie d'araignée, nous avons pour cela réalisé une <a href="annexe.html#observation">observation au microscope optique</a>. Il est très difficile de dire si notre échantillon était bien un unique fil de soie. Voici les photos obtenues :
+					</p>
+					<div class="galerie col-12">
+						<figure style="width:400px">
+							<img src="img/exp/observation/x400.jpg" alt="Observation microscopique d'un fil de soie d'araignée au grossissement x400">
+							<figcaption class="light center">
+								Fil de soie d'araginée au microscope optique, grossissement x400
+							</figcaption>
+						</figure>
+						<figure style="width:400px">
+							<img src="img/exp/observation/x600.jpg" alt="Observation microscopique d'un fil de soie d'araignée au grossissement x600">
+							<figcaption class="light center">
+								Fil de soie d'araginée au microscope optique, grossissement x600
+							</figcaption>
+						</figure>
+					</div>
+					<p>
+						En considérant que le cliché de droite représente un fil, nous avons calculé que le diamètre d'un fil est de l'ordre de dix micromètres. Le diamètre réel varie selon les sources, et tous les autres facteurs vus précédement, mais notre ordre de grandeur semble être le bon. Il est comparable à celui des cheveux qui trourne autour de 50 à 100µm.
+					</p>
+					<h2 id="2"><span class="nb">2</span>La construction de la structure de la toile</h2>
+					<div class="col-12"><span class="titre-question">QUESTION</span></div>
+					<div class="question">
+						<figure class="right-md" style="width:280px; margin-top: -25px;">
+							<img src="img/I/toile-question.jpg" alt="Photo d'une toile géométrique">
+							<figcaption class="dark">
+								Une toile dite "géométrique"
+								<span>
+									lesvoiesdelame.com
+									<a class="dark" href="https://p8.storage.canalblog.com/81/25/717345/88050196_o.jpg" title="source de l'image" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+								</span>
+							</figcaption>
+						</figure>
+						<h3>Combien de temps faut-il environ à une araignée pour construire une toile comme celle ci-contre?</h3>
+						<ul>
+							<li>
+								<button id="A2" class="btn btn-dark" type="button" onclick="q(2, 'A')">A</button>
+								L’araignée respecte un procédé méthodique qui prend environ une heure
+							</li>
+							<li>
+								<button id="B2" class="btn btn-dark" type="button" onclick="q(2, 'B')">B</button>
+								Il faut une dizaine de minutes pour tendre les quelques fils de la toile
+							</li>
+							<li>
+								<button id="C2" class="btn btn-dark" type="button" onclick="q(2, 'C')">C</button>
+								La toile est faite anarchiquement, la durée de fabrication est aléatoire
+							</li>
+						</ul>
+						<em id="msg2" class="rep"></em>
+					</div>
+					<p>
+						On recense à ce jour pas moins de 47 000 espèces d'araignées, mais toutes ne construisent pas de toile. Les toiles qu'elles produisent témoignent tout de même d'une grande diversité, si bien qu’on les a regroupées en deux grands types de toiles. D'une part, les toiles géométriques ou régulières, construites dans un plan, et ayant une forme ronde ou triangulaire. Ce sont les plus iconiques, mais pas forcément les plus représentées, puisque qu'on estime que seulement 3000 espèces tissent ce type de toile. Les autres araignées construisent, elles, des toiles informes dites irrégulières. Ce sont notamment les araignées aux pattes longues, que l'on rencontre souvent dans nos maisons, mais un bon nombre d'espèces tissent des toiles de cette manière. Ces toiles sont des pièges tridimensionnels constitués d’un enchevêtrement de fils désordonnés, tenant debout grâce à de nombreux points d’attache à son environnement. A l’inverse des autres toiles, celles-ci ne se basent pas sur une soie gluante pour retenir leurs proies, mais plutôt sur sa structure dans laquelle les insectes peuvent facilement s’entremêler.
+					</p>
+					<div class="galerie col-12" style="justify-content: space-around;">
+						<figure style="width:300px">
+							<img src="img/I/toile-reguliere.jpg" alt="Photo d'une toile à géométrie régulière">
+							<figcaption class="dark">
+								Toile géométrique
+								<span>
+									wikimedia.com
+									<a class="dark" href="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/To%C3%AEle_dans_la_for%C3%AAt_de_Broc%C3%A9liande.JPG/1280px-To%C3%AEle_dans_la_for%C3%AAt_de_Broc%C3%A9liande.JPG?1548257842195" title="source de l'image" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+								</span>
+							</figcaption>
+						</figure>
+						<figure style="width:337px">
+							<img src="img/I/toile-irreguliere.jpg" alt="Photo d'une toile à géométrie irrégulière">
+							<figcaption class="dark">
+								Toile irrégulière
+								<span>
+									nature.drouard.free.fr
+									<a class="dark" href="http://nature.drouard.free.fr/IMG/jpg/toile_en_nappe.jpg" title="source de l'image" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+								</span>
+							</figcaption>
+						</figure>
+					</div>
+					<p>
+						Nous avons fait le choix de nous intéresser plus particulièrement aux toiles du premier type, car leur géométrie leur confère des propriétés supplémentaires, mais également car elles sont plus similaires d'une espèce à l'autre, tandis qu'il existe une grande variété de toiles irrégulières. Ces toiles géométriques sont dites orbiculaires par les scientifiques, car elles décrivent une forme circulaire en deux dimensions.
+					</p>
+					<p>
+						Pour partir d'un exemple concret, prenons l'exemple de l'épeire diadème, une des plus fréquente dans nos jardins. Sa rigueur permet de bien comprendre le processus de tissage des araignées orbitèles : elle construit sa toile en une heure environ en produisant au total plusieurs dizaines de mètres de fil de soie. On peut décrire le tissage par un certain nombre d'étapes communes à d’autres araignées, elles sont reprises ici avec pour illustration une maquette que nous avons réalisée :
+					</p>
+					<ol>
+						<li>
+							<div>
+								<figure class="right-md maquette">
+									<img src="img/maquette/1.jpg" alt="Maquette de la méthode de fabrication d'une toile d'araignée géométrique">
+								</figure>
+								<p>Elle doit d'abord tendre un fil entre deux points d'ancrage fixes. Elle adopte pour se faire une technique très originale minimisant l'effort : le fil est si léger qu'il est porté au gré du vent à des distances respectables, où il s'accroche à la moindre disparité du terrain, une branche, un brin d'herbe… Une fois tendu, ce fil soutiendra l’ensemble de la structure, l’araignée opte donc pour un fil non collant mais très résistant qu’elle parcourt plusieurs fois pour le renforcer.</p>
+							</div>
+						</li>
+						<li>
+							<div>
+								<figure class="right-md maquette">
+									<img src="img/maquette/2.jpg" alt="Maquette de la méthode de fabrication d'une toile d'araignée géométrique">
+								</figure>
+								<p>Du milieu de ce fil, l'araignée descend avec un nouveau fil pour atteindre un troisième point nécessaire à la construction. Le fil du haut se tend pour former la structure porteuse, un « Y », dont le point central définit le centre de la toile.</p>
+							</div>
+							<li>
+								<div>
+									<figure class="right-md maquette">
+										<img src="img/maquette/3.jpg" alt="Maquette de la méthode de fabrication d'une toile d'araignée géométrique">
+									</figure>
+									<p>Elle va ensuite relier les extrémités de ce Y par des fils tendus, qui définissent le cadre de la toile. On obtient donc avec un minimum de points d’ancrage un triangle, mais en pratique, les araignées accrochent leur fil à d’autres points de leur environnement, ce qui aboutit à des polygones de plus ou moins de côtés que l’on appelle cadres.</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<figure class="right-md maquette">
+										<img src="img/maquette/4.jpg" alt="Maquette de la méthode de fabrication d'une toile d'araignée géométrique">
+									</figure>
+									<p>L'araignée suit ensuite un protocole très mathématique ; elle tisse entre une vingtaine et une quarantaine de rayons reliant le centre de la toile aux côtés du cadre. Elle commence par les médianes des triangles qui sont les plus importantes puisqu'elles soutiennent des pans du cadre éloignés des points d'accroche.</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<figure class="right-md maquette">
+										<img src="img/maquette/5.jpg" alt="Maquette de la méthode de fabrication d'une toile d'araignée géométrique">
+									</figure>
+									<p>Au cours de cette étape, la fileuse tisse un moyeu, une spirale très serrée autour du centre. C’est ici qu’elle guettera ses proies, mais ce fil résistant sert aussi à solidariser l’ensemble des rayons pour assurer le tissage du reste de la toile.</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<figure class="right-md maquette">
+										<img src="img/maquette/6.jpg" alt="Maquette de la méthode de fabrication d'une toile d'araignée géométrique">
+									</figure>
+									<p>L’araignée s’éloigne alors du moyeu pour tisser une nouvelle spirale, plus grande et s’écartant vers l’extérieur. L’intérêt de cette spirale est de supporter le poids de l’araignée le temps de la mise en place du piège. On peut comparer cette structure à un échafaudage, son fil n’est donc pas collant et peu resserré. Elle utilise pour garder le bon espacement entre chaque spire une technique originale : ses pattes font office de compas pour mesurer et reporter l’écartement.</p>
+								</div>
+							</li>
+							<li>
+								<div>
+									<figure class="right-md maquette">
+										<img src="img/maquette/7.jpg" alt="Maquette de la méthode de fabrication d'une toile d'araignée géométrique">
+									</figure>
+									<p>L’araignée entreprend finalement la mise en place du piège. Elle repart cette fois de l’extérieur en mangeant sa spirale provisoire pour en réutiliser ses protéines. Elle la remplace par une autre bien plus serrée, elle aussi constituée d’un seul et long fil. La soie de ce fil est tout à fait différente : si elle est moins solide et plus fine, elle est très collante.</p>
+								</div>
+							</li>
+						</ol>
+						<p>
+							On peut noter que les orbitèles s’attèlent en général à la reconstruction de leur toile tous les jours, afin de garantir l’efficacité de la substance collante qui est dégradée par les poussières et autres facteurs environnementaux. Elles ont donc un piège particulièrement ingénieux qui mêle optimisation des matériaux et des formes.
+						</p>
+					</div> <!--End text-->
+					<div class="row quick-nav">
+						<div class="flex-container col-12">
+							<a class="btn btn-outline-success" href="index.html" role="button">❮ Page précédente</a>
+							<a class="btn btn-outline-success clean" href="I.html" role="button">Partie I</a>
+							<a class="btn btn-outline-success" href="II.html" role="button">Page suivante ❯</a>
+						</div>
+					</div> <!--End quick nav-->
+				</div> <!--End article-->
+				<div class="cote cote-droit col-lg-2-5"></div> <!--Right pannel-->
+
+
+			</div> <!--End page-->
+		</div> <!--End container-->
+
+
+		<footer class="container-fluid">
+			<div class="row">
+				<div class="colonne col-lg-3 col-md-10 offset-1 offset-lg-3">
+					<h4 class="categorie">LA TOILE ET L'HOMME</h4>
+					<ol class="info">
+						<li>Ce site a été réalisé dans le cadre de Travaux Personnels Encadrés de Première scientifique. Il traite de la toile d'araignée sous tous ses aspects, dans l'optique de faire partager ses secrets au plus grand nombre.</li>
+					</ol>
+				</div>
+				<div class="colonne col-lg-2 col-md-10 offset-1 offset-lg-0">
+					<h4 class="categorie">PLAN DU SITE</h4>
+					<ol class="info">
+						<li><a class="link" href="index.html">Introduction</a></li>
+						<li><a class="link" href="I.html">Partie I</a></li>
+						<li><a class="link" href="II.html">Partie II</a></li>
+						<li><a class="link" href="III.html">Partie III</a></li>
+						<li><a class="link" href="conclusion.html">Conclusion</a></li>
+						<li><a class="link" href="annexe.html">Annexe</a></li>
+					</ol>
+				</div>
+				<div class="colonne col-lg-2 col-md-10 offset-1 offset-lg-0">
+					<h4 class="categorie">AUTEURS</h4>
+					<ol class="info">
+						<li>Natan Doubez</li>
+						<li>Théo Pascoal</li>
+						<li>Romain Benoit</li>
+						<li>—</li>
+						<li><a class="link" href="mailto:romainbenoit21560@gmail.com">Contactez-nous</a></li>
+					</ol>
+				</div>
+				<div class="col-lg-2 col-md-10 offset-lg-0 offset-md-1 button-container">
+					<a class="cd-top js-cd-top bottom-button" href="#"><i class="fas fa-angle-up"></i></a>
+				</div>
+			</div>
+			<div class="row line">
+				<div class="col-12 copyrights">Copyright © Tous droits réservés, ou presque | Site réalisé par Romain Benoit</div>
+			</div>
+		</footer>
+
+		<!-- Javascript -->
+		<!-- Back To Top JS -->
+		<script type="text/javascript" src="js/backtotop.js"></script>
+		<!-- jQuery first -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<!-- jQuery Parallax -->
+		<script type="text/javascript" src="js/parallax.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#I').parallax("center", 600, 0.3, true);
+			})
+		</script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.js"></script>
+		<!-- MathJax -->
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+	</body>
+	</html>
