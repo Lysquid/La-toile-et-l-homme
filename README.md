@@ -2,4 +2,4 @@
 
 ![screenshot](screenshot.png)
 
-A website on the proprieties of spider silk made in 2020 for the TPE of the French baccalaureate.
+A website on the proprieties of spider silk made in 2020 for the TPE of the French baccalaureate. It uses some templates of [Bootstrap](https://getbootstrap.com/).
